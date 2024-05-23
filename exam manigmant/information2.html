@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معلومات الطالب - امتحان الكفاءة الجامعية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 50px;
+            max-width: 600px;
+            margin: 50px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .logo {
+            width: 80px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            text-align: right;
+            margin: 10px 0;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/University_of_Jordan_Logo.svg/1200px-University_of_Jordan_Logo.svg.png" alt="شعار الجامعة الأردنية" class="logo">
+        <h1>الجامعة الأردنية - نظام امتحان الكفاءة الجامعية</h1>
+        <h1>معلومات الطالب</h1>
+        <hr>
+        <form>
+            <label for="name">الاسم الرباعي:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="major">التخصص:</label>
+            <input type="text" id="major" name="major">
+            
+            <label for="studentId">الرقم الجامعي:</label>
+            <input type="text" id="studentId" name="studentId">
+            
+            <label for="status">حالة الطالب:</label>
+            <input type="text" id="status" name="status" placeholder="خريج" value="خريج" multiple>
+            
+            <button type="button" class="button" onclick="nextStep()">التالي</button>
+        </form>
+    </div>
+    <script>
+        function nextStep() {
+            alert("تم إرسال المعلومات بنجاح!");
+            window.location.href = 'create_exam3.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج التقديم لامتحان الكفاءة الجامعية</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: right;
+        }
+
+        .container {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+
+        .header div {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        h1, h2 {
+            margin: 5px 0;
+        }
+
+        h2 {
+            font-size: 1.2em;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        .form-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .form-table th, .form-table td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: right;
+        }
+
+        .form-table th {
+            background-color: #f2f2f2;
+        }
+
+        .form-table input, .form-table select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .note {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .note p {
+            margin: 5px 0;
+        }
+
+        .start {
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/University_of_Jordan_Logo.svg/1200px-University_of_Jordan_Logo.svg.png" alt="Logo" class="logo">
+            <div>
+                <h1>الجامعة الأردنية - نظام امتحان الكفاءة الجامعية</h1>
+                <h2>نموذج التقديم لامتحان الكفاءة الجامعية للطلبة المتوقع تخرجهم</h2>
+            </div>
+        </div>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>رقم السياسة</th>
+                    <td>AQC-05-04-01</td>
+                    <th rowspan="6">نموذج التقديم لامتحان الكفاءة الجامعية للطلبة المتوقع تخرجهم</th>
+                </tr>
+                <tr>
+                    <th>رقم وتاريخ الإصدار</th>
+                    <td>2/3/24/2022/2953</td>
+                </tr>
+                <tr>
+                    <th>رقم المراجعة وتاريخها</th>
+                    <td>15/12/2023</td>
+                </tr>
+                <tr>
+                    <th>رقم اعتماد مجلس العمداء</th>
+                    <td>50/2023</td>
+                </tr>
+                <tr>
+                    <th>تاريخ قرار اعتماد مجلس العمداء</th>
+                    <td>26/12/2023</td>
+                </tr>
+                <tr>
+                    <th>عدد الصفحات</th>
+                    <td>01</td>
+                </tr>
+            </table>
+        </div>
+        <p class="start">الأستاذ الدكتور رئيس هيئة اعتماد مؤسسات التعليم العالي وضمان جودتها تحية طيبة وبعد...</p>
+        <p class="start">يرجى التكرم بالإعلام لنا بقراركم بما يخص الموضوع الآتي:</p>
+                        
+        <form id="examForm">
+            <table class="form-table">
+                <tr>
+                    <th>الموضوع:</th>
+                    <td><label><input type="radio" name="subject" value="certificate"> إصدار شهادة امتحان الكفاءة الجامعية</label></td>
+                    <td><label><input type="radio" name="subject" value="exam"> التقدم للامتحان</label></td>
+                </tr>
+                <tr>
+                    <th>التاريخ:</th>
+                    <td colspan="2"><input type="date" id="date" name="date" required></td>
+                </tr>
+                <tr>
+                    <th>الرقم الجامعي:</th>
+                    <td colspan="2"><input type="text" id="studentID" name="studentID" required></td>
+                </tr>
+                <tr>
+                    <th>الاسم:</th>
+                    <td colspan="2"><input type="text" id="studentName" name="studentName" required></td>
+                </tr>
+                <tr>
+                    <th>التخصص:</th>
+                    <td colspan="2"><input type="text" id="major" name="major" required></td>
+                </tr>
+                <tr>
+                    <th>الكلية:</th>
+                    <td colspan="2"><input type="text" id="college" name="college" required></td>
+                </tr>
+                <tr>
+                    <th>المعدل التراكمي:</th>
+                    <td colspan="2"><input type="text" id="cumulativeAvg" name="cumulativeAvg" required></td>
+                </tr>
+                <tr>
+                    <th>وضع الطالب:</th>
+                    <td colspan="2">
+                        <select id="studentStatus" name="studentStatus" required>
+                            <option value="expected">متوقع تخرجه</option>
+                            <option value="graduated">خريج</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>العام الجامعي:</th>
+                    <td colspan="2"><input type="text" id="academicYear" name="academicYear" required></td>
+                </tr>
+                <tr>
+                    <th>الفصل:</th>
+                    <td colspan="2"><input type="text" id="semester" name="semester" required></td>
+                </tr>
+                <tr>
+                    <th>الجنسية:</th>
+                    <td colspan="2"><input type="text" id="nationality" name="nationality" required></td>
+                </tr>
+                <tr>
+                    <th>الرقم الوطني/رقم جواز السفر لغير الأردنيين:</th>
+                    <td colspan="2"><input type="text" id="nationalID" name="nationalID" required></td>
+                </tr>
+                <tr>
+                    <th>رقم الهاتف:</th>
+                    <td colspan="2"><input type="text" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <th><input type="radio" id="examYes" name="examTaken" value="yes"> تقدم الطالب لامتحان كفاءة جامعية سابقا</label>
+                        <label><input type="radio" id="examNo" name="examTaken" value="no">لم يتقدم لامتحان كفاءة جامعية سابقا</label></th>
+                    <td colspan="2">
+                        <h1>مركز الاعتماد وضمان الجودة/ شعبة المتابعة والتقييم</h1>
+                    </td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <button type="submit" class="btn">اعتماد النموذج</button>
+            </div>
+        </form>
+        <div class="note">
+            <p>وتفضلوا بقبول فائق الاحترام والتقدير،،</p>
+            <p>مدير مركز الاعتماد وضمان الجودة</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('examForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('تم إرسال النموذج');
+            window.location.href = 'end6.html';
+        });
+    </script>
+</body>
+</html>
